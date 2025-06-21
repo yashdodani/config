@@ -98,7 +98,6 @@ return {
 						"sass",
 						"scss",
 						"less",
-						"svelte",
 					},
 				})
 			end,
@@ -119,23 +118,23 @@ return {
 					},
 				})
 			end,
-			["gopls"] = function()
-				lspconfig["gopls"].setup({
-					capabilities = capabilities,
-					cmd = { "gopls" },
-					filetypes = { "go", "gomod", "gowork", "gotmpl" },
-					root_dir = util.root_pattern("go.work", "go.mod", ".git"),
-					settings = {
-						gopls = {
-							completeUnimported = true,
-							usePlaceholders = true,
-							analyses = {
-								unusedParams = true,
-							},
-						},
-					},
-				})
-			end,
+			-- ["gopls"] = function()
+			-- 	lspconfig["gopls"].setup({
+			-- 		capabilities = capabilities,
+			-- 		cmd = { "gopls" },
+			-- 		filetypes = { "go", "gomod", "gowork", "gotmpl" },
+			-- 		root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+			-- 		settings = {
+			-- 			gopls = {
+			-- 				completeUnimported = true,
+			-- 				usePlaceholders = true,
+			-- 				analyses = {
+			-- 					unusedParams = true,
+			-- 				},
+			-- 			},
+			-- 		},
+			-- 	})
+			-- end,
 		})
 	end,
 }

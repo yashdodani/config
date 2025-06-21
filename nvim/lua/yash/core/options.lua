@@ -54,5 +54,5 @@ opt.guicursor = "n-v-c-sm:block-Cursor,i-ci-ve:block-Cursor,r-cr-o:hor20-Cursor"
 
 -- default neovim indicator
 opt.showmode = false
-opt.cmdheight = 0
+-- opt.cmdheight = 0
 -- opt.laststatus = 3
