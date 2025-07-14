@@ -13,19 +13,15 @@ seat seat0 xcursor_theme default 16
 # font pango:Noto semibold 0.001
 
 # default_border none
-# hide_edge_borders smart
+hide_edge_borders smart
 
 # remove tab line
-# default_border none
+default_border none
 default_floating_border none
 font pango:Noto semibold 0.001
 titlebar_padding 1
 titlebar_border_thickness 0
-
 smart_borders on
-# gaps inner 5
-# gaps outer 3
-default_border pixel 3
 
 ### Variables
 #
@@ -48,7 +44,8 @@ set $menu wofi --show drun
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/yash/Downloads/walpapers/ninja1.jpg fill
+# output * bg /home/yash/Downloads/walpapers/ninja1.jpg fill
+output * bg /home/yash/Downloads/walpapers/arch-dark-grey.png fill
 #
 # Example configuration:
 #
@@ -56,11 +53,15 @@ output * bg /home/yash/Downloads/walpapers/ninja1.jpg fill
 # Docs: output HDMI-A-1 resolution 1920x1080 position 1920,0
 
 # Use Laptop screen 
-output eDP-1 resolution 1920x1080 scale 1 position 1920,0 
+output eDP-1 resolution 1920x1080 scale 1.25 position 1920,0 
 
 # External monitor display only
 # output HDMI-A-1 resolution 1920x1080 scale 1 position 1920,0 
 # output eDP-1 disable
+
+# Vertical position monitors
+# output HDMI-A-1 resolution 1920x1080 scale 1 position 0,0 
+# output eDP-1 resolution 1920x1080 scale 1 position 0,1080
 
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs

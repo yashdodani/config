@@ -1,10 +1,11 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
-  font-family: cantarell;
+  /* font-family: cantarell; */
+  font-family: JetBrainsMono Nerd Font;
   font-weight: 500;
-  font-size: 17px;
-  margin: 0.5px 1px;
+  font-size: 13px;
+  margin: 0 0.5px;
 }
 
 window#waybar {
@@ -73,7 +74,7 @@ button:hover {
 /*     background-color: #eb4d4b; */
 /* } */
 #workspaces {
-  margin-top: 3px;
+  margin-top: 1px;
   margin-bottom: 2px;
   margin-right: 10px;
   margin-left: 25px;
@@ -83,7 +84,7 @@ button:hover {
   background: inherit;
   border-radius: 7px;
   margin-right: 7px;
-  padding: 0px 4px;
+  padding: 0px 2px;
   font-weight: bolder;
   color: #efefef;
   background-color: #181818;
@@ -92,7 +93,7 @@ button:hover {
 #workspaces button.active,
 #workspaces button.focused {
   color: #181818;
-  padding: 0 4px;
+  padding: 0 2px;
   box-shadow:
     rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
@@ -121,7 +122,8 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-  padding: 0 12px;
+  margin: 0 18px;
+  padding: 0 2px;
   /* border-radius: 10px; */
   color: #ffffff;
 }
