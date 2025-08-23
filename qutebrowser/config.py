@@ -6,7 +6,7 @@ config.load_autoconfig(False)
 
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 config.set('content.cookies.accept', 'all', 'devtools://*')
-config.set('content.headers.accept_language', '', 'https://matchmaker.krunker.io/*')
+# config.set('content.headers.accept_language', '', 'https://matchmaker.krunker.io/*')
 config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:136.0) Gecko/20100101 Firefox/136.0', 'https://accounts.google.com/*')
 
 # Load images automatically in web pages.
@@ -22,12 +22,12 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 # config.set('content.local_content_can_access_file_urls', False, 'file:///home/yash/.local/share/qutebrowser/userscripts/*')
 
 # google meet permissions
-config.set('content.media.audio_capture', True, 'https://meet.google.com/*')
-config.set('content.autoplay', True, '*')
-config.set('content.media.audio_video_capture', True, 'https://meet.google.com/*')
-config.set('content.media.video_capture', True, 'https://meet.google.com/*')
-config.set('content.desktop_capture', True, 'https://meet.google.com/*')
-config.set('content.javascript.clipboard', 'access-paste', '*')
+# config.set('content.media.audio_capture', True, 'https://meet.google.com/*')
+# config.set('content.autoplay', True, '*')
+# config.set('content.media.audio_video_capture', True, 'https://meet.google.com/*')
+# config.set('content.media.video_capture', True, 'https://meet.google.com/*')
+# config.set('content.desktop_capture', True, 'https://meet.google.com/*')
+# config.set('content.javascript.clipboard', 'access-paste', '*')
 
 # Keybindings
 config.unbind('b')
