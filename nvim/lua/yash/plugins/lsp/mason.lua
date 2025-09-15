@@ -34,7 +34,6 @@ return {
 				"emmet_ls",
 				"pyright",
 				"clangd",
-				"gopls",
 			},
 		})
 

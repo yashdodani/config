@@ -20,15 +20,16 @@ return {
 						["<C-j>"] = actions.move_selection_next, -- move to next result
 						["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
 						["<C-l>"] = actions.preview_scrolling_down,
+						["<C-h>"] = actions.preview_scrolling_up,
 					},
 				},
 				layout_config = {
-					preview_width = 0.7,
+					preview_width = 0.6,
 					-- results_width = 0.4,
 					-- horizontal = {
-					-- preview_width = 0.7,
-					-- results_width = 0.4,
-					-- prompt_position = "top",
+					-- 	preview_width = 0.9,
+					-- 	results_width = 0.9,
+					-- 	prompt_position = "top",
 					-- },
 					-- width = 0.9,
 					-- height = 0.9,
@@ -39,11 +40,11 @@ return {
 					theme = "ivy",
 				},
 				find_files = {
+					-- theme = "ivy",
 					theme = "ivy",
-					-- theme = "dropdown",
 					-- layout_config = {
 					-- 	width = 0.9,
-					-- 	height = 0.3,
+					-- 	height = 0.5,
 					-- },
 
 					-- config for horizontal with large preview window
