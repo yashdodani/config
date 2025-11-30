@@ -6,7 +6,7 @@ config.load_autoconfig(False)
 
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 config.set('content.cookies.accept', 'all', 'devtools://*')
-# config.set('content.headers.accept_language', '', 'https://matchmaker.krunker.io/*')
+config.set('content.headers.accept_language', '', 'https://matchmaker.krunker.io/*')
 config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:136.0) Gecko/20100101 Firefox/136.0', 'https://accounts.google.com/*')
 
 # Load images automatically in web pages.
@@ -49,11 +49,17 @@ config.unbind('d') # Delete tab
 # Tab options
 c.tabs.position = 'top'
 c.tabs.show = 'multiple'
-c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
+c.tabs.padding = {'top': 2, 'bottom': 2, 'left': 9, 'right': 9}
 c.tabs.indicator.width = 0 # no tab indicators
 c.tabs.width = '10%'
 # c.window.transparent = True # apparently not needed
 # c.tabs.title.format = "{audio}{current_title}"
+
+c.url.default_page = 'https://www.google.co.in'
+c.url.searchengines = {
+    'DEFAULT': 'https://www.google.co.in/search?q={}'
+}
+c.url.start_pages = ['https://www.google.co.in']
 
 # Dark mode
 c.colors.webpage.darkmode.enabled = True
