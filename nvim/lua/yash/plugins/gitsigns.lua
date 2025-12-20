@@ -5,13 +5,17 @@ return {
 		on_attach = function(bufnr)
 			local gs = package.loaded.gitsigns
 
+			-- Utility function to simplify key mapping
 			local function map(mode, l, r, desc)
 				vim.keymap.set(mode, l, r, { buffer = bufnr, desc = desc })
 			end
+			-- currently in use
+			map("n", "<leader>gp", gs.preview_hunk, "preview hunk")
+			map("n", "<leader>gt", gs.toggle_current_line_blame, "toggle line blame")
 
 			-- Navigation
-			map("n", "]h", gs.next_hunk, "Next Hunk")
-			map("n", "[h", gs.prev_hunk, "Prev Hunk")
+			map("n", "]g", gs.next_hunk, "Next Hunk")
+			map("n", "[g", gs.prev_hunk, "Prev Hunk")
 
 			-- Actions
 			map("n", "<leader>hs", gs.stage_hunk, "Stage hunk")
@@ -28,12 +32,9 @@ return {
 
 			map("n", "<leader>hu", gs.undo_stage_hunk, "Undo stage hunk")
 
-			map("n", "<leader>hp", gs.preview_hunk, "Preview hunk")
-
 			map("n", "<leader>hb", function()
 				gs.blame_line({ full = true })
 			end, "Blame line")
-			map("n", "<leader>hB", gs.toggle_current_line_blame, "Toggle line blame")
 
 			map("n", "<leader>hd", gs.diffthis, "Diff this")
 			map("n", "<leader>hD", function()
