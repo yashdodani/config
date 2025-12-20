@@ -118,6 +118,19 @@ return {
 					},
 				})
 			end,
+			["eslint"] = function()
+				lspconfig["eslint"].setup({
+					on_attach = function(client, bufnr)
+						vim.api.nvim_create_autocmd("BufWritePre", {
+							group = vim.api.nvim_create_augroup("EslintAutoFix", { clear = true }),
+							buffer = bufnr,
+							callback = function()
+								vim.cmd("EslintFixAll")
+							end,
+						})
+					end,
+				})
+			end,
 			-- ["gopls"] = function()
 			-- 	lspconfig["gopls"].setup({
 			-- 		capabilities = capabilities,

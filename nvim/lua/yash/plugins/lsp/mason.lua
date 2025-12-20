@@ -34,6 +34,7 @@ return {
 				"emmet_ls",
 				"pyright",
 				"clangd",
+				"eslint",
 			},
 		})
 

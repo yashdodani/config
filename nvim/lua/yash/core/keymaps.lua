@@ -35,3 +35,18 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- move into the vim.lsp.buf.hover() docs floating window
 keymap.set("n", "<S-l>", "<C-w><C-w>", { noremap = true, silent = true, desc = "Move into docs window" })
+
+-- switch panes
+keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left pane" })
+keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to lower pane" })
+keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to upper pane" })
+keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right pane" })
+
+-- Maximize current window width and height
+vim.keymap.set("n", "<Leader>Z", "<C-w>|<C-w>_", { desc = "Maximize current window" })
+
+-- Return all windows to equal size
+vim.keymap.set("n", "<Leader>=", "<C-w>=", { desc = "Equalize all windows" })
+
+-- go back to previous buffer
+vim.keymap.set("n", "<leader>ba", "<C-^>", { desc = "Go back to previous buffer" })
