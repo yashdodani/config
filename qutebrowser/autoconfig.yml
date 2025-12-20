@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.geolocation:
-    https://ejgk.fa.em2.oraclecloud.com: false
+  content.notifications.enabled:
+    https://www.indianstartuptimes.com: false
